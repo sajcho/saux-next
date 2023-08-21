@@ -1,0 +1,7 @@
+untrusted comment: verify with saux-next.pub
+RWRbmjgE6uIUtxXYFt+rGVM4QcLnjPOJr7Ri6AYHdCEtisEhfpK10uN+y1ir6gdb88tdmyPVKi4z59ZzwZvncomUmkRKp1yiCgM=
+SHA256 (Pkgfile) = 106efcb8f78926803212c07c22bd2e65cbe2506323edd8af507d4fea6e7d8cd5
+SHA256 (.footprint) = fc4d8d00f0901280a0bc20dff3166d79ea0e0deec62ca74cd052120be4345dfd
+SHA256 (plocate-1.1.19.tar.gz) = d95bc8ee8a9f79b9f69ce63df53fb85b202139f243bbb84c399555eda22e6165
+SHA256 (plocate) = 3220c159f621a3a38324c162b1bc218b6023f89ec5accaa74cb0c1a2e970e90e
+SHA256 (updatedb.conf) = 2fb40bd2d44c1fd803586bf5cf405981e046b5db9b07ff1c01c6598819a1f2d2

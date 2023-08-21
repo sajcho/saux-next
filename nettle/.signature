@@ -1,0 +1,5 @@
+untrusted comment: verify with saux-next.pub
+RWRbmjgE6uIUt31AmfZ1rHh6zo3rn33PHjzLp1yXN49/yLArXJbdeCVhAKrcdH/4y+p3JIJWrVziWbr6M97AIe8qHOoJ1qcd1QA=
+SHA256 (Pkgfile) = 1624c60e5eac017f0765187af9420c00d884cf88d4f58d0df486d640cd785263
+SHA256 (.footprint) = d7ac6fb3f38f9c0f257034061c0ace301630d18a84a12b9d136ae172b39b7387
+SHA256 (nettle-3.9.1.tar.gz) = ccfeff981b0ca71bbd6fbcb054f407c60ffb644389a5be80d6716d5b550c6ce3

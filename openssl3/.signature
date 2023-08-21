@@ -1,0 +1,6 @@
+untrusted comment: verify with saux-next.pub
+RWRbmjgE6uIUtyhmsSt9mvmFVS3yXggIx5AM3d67iaMn+NgB1fVOP210cq/NvPNE2sUDQTxUoqM5Dm8Lga76P2L9LrDLTCwp9wI=
+SHA256 (Pkgfile) = 03dc7c1b30bab6d79e043751c0faf0a0120fc33392badaf834604cc2fb210c0b
+SHA256 (.footprint) = e7210b43b48c39fa5f288845c103efdbf6e17fb6160b9f69a73ce4a07d629188
+SHA256 (openssl-3.1.0.tar.gz) = aaa925ad9828745c4cad9d9efeb273deca820f2cdcf2c3ac7d7c1212b7c497b4
+SHA256 (mksslcert.sh) = d01cfd061b792f4f7444429582c5c9e83aaa7fc63cafd05669fd3f2970dff779
