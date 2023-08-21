@@ -1,0 +1,29 @@
+# Description:	Utility for calculation and verification of hash sums and magnet links
+# URL:		http://rhash.anz.ru
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	openssl3
+
+name=rhash
+version=1.4.4
+release=1
+source=(https://github.com/${name}/RHash/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd RHash-${version}
+
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--enable-openssl \
+		--disable-openssl-runtime
+
+	make V=1
+
+	make test-shared
+
+	make DESTDIR=$PKG \
+		install-lib-headers \
+		install-lib-shared \
+		install-lib-so-link \
+		install
+}
