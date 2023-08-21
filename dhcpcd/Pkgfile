@@ -1,0 +1,45 @@
+# Description:	An RFC2131-compliant DHCP client daemon
+# URL:		http://roy.marples.name/projects/dhcpcd/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	eudev
+
+name=dhcpcd
+version=10.0.2
+release=1
+source=(https://github.com/NetworkConfiguration/${name}/releases/download/v${version}/${name}-${version}.tar.xz \
+	dhcpcd-sv.conf dhcpcd.run)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
+		--prefix= \
+		--libexecdir=/lib/dhcpcd \
+		--dbdir=/var/lib/dhcpcd \
+		--sysconfdir=/etc/dhcpcd \
+		--runstatedir=/run \
+		--enable-privsep \
+		--privsepuser=dhcpcd
+
+	make V=1
+
+	make DESTDIR=$PKG install
+
+	# dhcpcd runit service
+	install -d $PKG/etc/sv/dhcpcd
+	install -m 0644 $SRC/dhcpcd-sv.conf $PKG/etc/sv/dhcpcd/conf
+	install -m 0755 $SRC/dhcpcd.run $PKG/etc/sv/dhcpcd/run
+	ln -s /run/runit/supervise.dhcpcd $PKG/etc/sv/dhcpcd/supervise
+
+	install -d -m 0700 -o dhcpcd -g dhcpcd $PKG/var/lib/dhcpcd
+	chown dhcpcd:dhcpcd $PKG/var/lib/dhcpcd
+
+	chmod -R u+w $PKG
+
+	ln -s /usr/share/dhcpcd/hooks/10-wpa_supplicant $PKG/lib/dhcpcd/dhcpcd-hooks/10-wpa_supplicant
+
+	# prevent
+	rm $PKG/lib/dhcpcd/dhcpcd-hooks/50-ntp.conf
+}
