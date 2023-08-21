@@ -1,0 +1,7 @@
+untrusted comment: verify with saux-next.pub
+RWRbmjgE6uIUt3NSIQPMhL/9vtb0VAWkXf74rIuuCY+yQ3BD4fxxPj3SF3rqUjf/8BjfWxu8Co6nwLTzEgSJcBicHK3JHlMJ5Q0=
+SHA256 (Pkgfile) = 136e03892384a9955089025a6bee8af1e7b6a3d611d30dbb0a8ed751a402b2e3
+SHA256 (.footprint) = 50b4691e1687591d9e7e5821db44e102d585ea514bb6c33b666a5a61e92cd233
+SHA256 (git-2.41.0.tar.xz) = e748bafd424cfe80b212cbc6f1bbccc3a47d4862fb1eb7988877750478568040
+SHA256 (git-manpages-2.41.0.tar.xz) = bc7a4c944492c76fc3cd766ce22e826d0241e43792c611d4fdc068e0df545877
+SHA256 (git.driver) = 432108f8c5f5abeb429cab25181b43ee42060d46fa7fbe7e4b02790b56f61e8a

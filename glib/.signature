@@ -1,0 +1,7 @@
+untrusted comment: verify with saux-next.pub
+RWRbmjgE6uIUt0O8feJg5bI+jVMsm4x/pEkUu7booRxLRp24OEsB1QE6raQdlw8+5nS9C8wPTT+EMUt3wa0USC5KIs3W7Jym+Ac=
+SHA256 (Pkgfile) = 278d7c4766232e5e20dcfe4513b38ca133378942a938baf9d1fcae775189cbfe
+SHA256 (.footprint) = dff9761ca08f6fe4601fba66bcaa0cf0a6fd5900e29aaed0b84af31b8782083c
+SHA256 (glib-2.76.4.tar.xz) = 5a5a191c96836e166a7771f7ea6ca2b0069c603c7da3cba1cd38d1694a395dda
+SHA256 (deprecated-no-warn.patch) = 0f52f456c8c91281fee33d99fc02799faf90d2f374a896b728abd5913aa5f9dc
+SHA256 (gschemas.compiled) = f2ca328db96bf936e677d53b3e89fc4bf57ada9a1d5e2466cb0afe85307a1e75

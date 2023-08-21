@@ -1,0 +1,35 @@
+# Description:	The GNU troff text-formatting system
+# URL:		http://www.gnu.org/software/groff/groff.html
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=groff
+version=1.23.0
+release=1
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--without-x
+
+	make V=1
+
+	make DESTDIR=$PKG install
+
+	sed -e 's|^\(papersize\).*|\1 /etc/papersize|' \
+		-i $PKG/usr/share/groff/current/font/*/DESC
+
+	install -d $PKG/etc
+	echo 'letter' > $PKG/etc/papersize
+
+	ln -s eqn $PKG/usr/bin/geqn
+	ln -s tbl $PKG/usr/bin/gtbl
+	ln -s soelim $PKG/usr/bin/zsoelim
+
+	rm -rf $PKG/usr/share/{info,doc}
+}

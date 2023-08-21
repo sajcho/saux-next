@@ -1,0 +1,8 @@
+untrusted comment: verify with saux-next.pub
+RWRbmjgE6uIUt6wH5f2aMtSmPQ5BbO477dX9od7G3Su4rIepJd8oZs/7Gr9Su+Y6j6uwjqEi/+x0n6fWdtT3CqUsy9xc2n7onQI=
+SHA256 (Pkgfile) = 8c6960a19c6d1e50b724227c8ff64820924e5977f3bed792008dc3abfb940515
+SHA256 (.footprint) = 1f975b1111c53f5f02c6dd9de60a37548eaa379a11aaa67b9f8d3b499cc43627
+SHA256 (fcron-3.3.1.src.tar.gz) = f359daa08a63ddfb7fe2f964bb3f5c52244c25aa36f9225a3cc54d36f4681106
+SHA256 (fcron.run) = c6eedc833799bc2139c3fc6a196cf8efccbfa86eb4f49fc515f38b3cb0b03258
+SHA256 (runjobs) = c861105f2b04ad07cade83f3677fd261ae96ad2ef22a27e21e5490b97eecee4b
+SHA256 (systab.orig) = 768de3cddf3dee50a80a154282a9efa9195dfd60fdb0ba2a0ac4401ac7a9eb69
