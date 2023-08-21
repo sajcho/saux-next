@@ -1,0 +1,5 @@
+untrusted comment: verify with saux-next.pub
+RWRbmjgE6uIUtwHpIGhMfJAsdBz9L+jguPqh+T7fzOPllQNvVRA+zx2MN+pEz/I0d3IZAhY4eHHu4NCdcLaSXgOoHGz+Wz69dgw=
+SHA256 (Pkgfile) = 29334b61a38e4ea826200b53f669978611341e83e965c6d3488a1f1b5ebc3977
+SHA256 (.footprint) = 7e39a33d28bba432ad2aa233d64f2530cd934b9af2de3b9cc67ce1c7f6dc4f62
+SHA256 (libuv-v1.46.0.tar.gz) = 111f83958b9fdc65f1489195d25f342b9f7a3e683140c60e62c00fbaccddddce

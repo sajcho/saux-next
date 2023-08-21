@@ -1,0 +1,5 @@
+untrusted comment: verify with saux-next.pub
+RWRbmjgE6uIUt0cyCLpO2gR7vzpxQaZ+/QCffvhJ+elRc2I687XK9ph/SYxKga4AF43QfcHV6cZBUWzGNmNt6pgq0LOp/QUWVAc=
+SHA256 (Pkgfile) = bfeaa721871452d98f5b807859c7a82a8e9e7dcc8eae70c55cad175d99df1ff0
+SHA256 (.footprint) = 94e3f15ea6360bbad078c0da1bff86e6f8b15bd6bab99dd572f70d2354280e7c
+SHA256 (libgcrypt-1.10.2.tar.bz2) = 3b9c02a004b68c256add99701de00b383accccf37177e0d6c58289664cce0c03
