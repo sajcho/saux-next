@@ -1,0 +1,70 @@
+# Description:	The GNU Binutils are a collection of binary tools
+# URL:		http://sources.redhat.com/binutils/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	flex texinfo zlib
+
+name=binutils
+version=2.41
+release=1
+source=(https://sourceware.org/pub/${name}/releases/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	export CFLAGS="${CFLAGS/ -flto=auto -ffat-lto-objects/}"
+	export CXXFLAGS="${CXXFLAGS/ -flto=auto -ffat-lto-objects/}"
+
+	mkdir build
+	cd build
+
+	../configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--enable-ld=default \
+		--enable-gold=no \
+		--enable-plugins \
+		--enable-shared \
+		--enable-threads \
+		--enable-relro \
+		--enable-64-bit-bfd \
+		--enable-pgo-build=lto \
+		--enable-install-libiberty \
+		--enable-default-execstack=no \
+		--enable-deterministic-archives \
+		--disable-nls \
+		--disable-werror \
+		--disable-multilib \
+		--disable-gprofng \
+		--disable-jansson \
+		--disable-sim \
+		--disable-gdb \
+		--disable-gdbserver \
+		--disable-libdecnumber \
+		--disable-readline \
+		--with-pic \
+		--with-system-zlib \
+		--with-pkgversion=SAUX-x86_64 \
+		--build=$CHOST \
+		--host=$CHOST
+
+	make V=1 tooldir=/usr
+
+	#  Optional
+	#make -k check || :
+
+	make tooldir=/usr DESTDIR=$PKG install
+
+	# just a symlink
+	rm $PKG/usr/bin/ld
+	ln -s ld.bfd $PKG/usr/bin/ld
+
+	# Create triplet symlinks
+	for f in $PKG/usr/bin/*; do
+		ln -s ${f##*/} $PKG/usr/bin/$CHOST-${f##*/}
+	done
+
+	rm -r $PKG/usr/share/info
+	rm $PKG/usr/share/man/man1/{dlltool,windres,windmc}.1
+
+	sed -i "s|-L$SRC[^ ]* ||g" $PKG/usr/lib/lib{bfd,ctf,ctf-nobfd,opcodes}.la
+}

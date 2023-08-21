@@ -1,0 +1,5 @@
+untrusted comment: verify with saux-next.pub
+RWRbmjgE6uIUtwggSEPErk+vD1fiPvyOf6RvRazClFW8spPbPKf6lSdeJX2CV+9h5P/5wPxwknRDbe9x2K4ZlDsCy9e58PaF2AE=
+SHA256 (Pkgfile) = 5073aacd504d094e231dc3b09f6c1a26dcf86a6e09bc977c2bb2425cd91318d9
+SHA256 (.footprint) = 92930b2d9b1d5da08760f16fa80c1ff0c13e811e50cb4414f98265cef748bf40
+SHA256 (cacert.pem) = 5fadcae90aa4ae041150f8e2d26c37d980522cdb49f923fc1e1b5eb8d74e71ad
