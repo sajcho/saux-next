@@ -1,0 +1,6 @@
+# saux-next ports collection
+#
+# https://github.com/sajcho/saux-next
+
+ROOT_DIR=/usr/ports/saux-next
+URL=https://raw.githubusercontent.com/sajcho/saux-next/main
