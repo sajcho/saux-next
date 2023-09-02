@@ -1,5 +1,6 @@
 untrusted comment: verify with saux-next.pub
-RWRbmjgE6uIUt+vICx8MdkPmdNGv8o8Nxm8AESwZeeXAihEGFrevhnIXTe2+OTnJUhi3a7wz8qYJsC4+FP3Z9OB3BxuLm25H5wA=
-SHA256 (Pkgfile) = f97749e43c4eab1c09337c6bb88f9eb3c09b9efe8ce32110e82788b7497133cf
-SHA256 (.footprint) = dda9f5269d0de8d3d9de4de83ea19d6829ff025e87d90698c9b6a8dbee21f87c
+RWRbmjgE6uIUt0GK3rBJXPh11kSfR9LzoKRzKDxt/dyMHX7e3NdacmpCw40vbnNrsYdnQ8yAz93JZ/OCQ035Q3ytQ4WM5s08OAs=
+SHA256 (Pkgfile) = d303eeb50974890b3254e5e5ccda58e9bc3353b4f487fcdf43709929390aff9d
+SHA256 (.footprint) = 52cb2df6341ea658e0a20dbde39ab2031f38d3ee430e3cf51a00beb911aaa7c6
 SHA256 (zstd-v1.5.5.tar.gz) = 98e9c3d949d1b924e28e01eccb7deed865eefebf25c2f21c702e5cd5b63b85e1
+SHA256 (disable-warning-decompression-multi-thread.patch) = bcf4d000d85240d8d2693438855ac218a1f93c56b63bfb6be9e5598206b5cd73
