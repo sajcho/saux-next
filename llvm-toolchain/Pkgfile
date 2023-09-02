@@ -1,13 +1,13 @@
-# Description:	LLVM toolchain - llvm,clang,compiler-rt,lld
+# Description:	LLVM toolchain - llvm,clang,compiler-rt
 # URL:		http://llvm.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 # Depends on:	libedit libxml2 python3-setuptools samurai
 
 name=llvm-toolchain
 _realname=llvm-project
-version=16.0.6
-release=2
-source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-${version}/${_realname}-${version}.src.tar.xz)
+version=17.0.0rc3
+release=0
+source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-17.0.0-rc3/${_realname}-${version}.src.tar.xz)
 
 build() {
 	cd ${_realname}-${version}.src
@@ -24,8 +24,8 @@ build() {
 		-DCMAKE_BUILD_TYPE="Release" \
 		-DCMAKE_INSTALL_PREFIX="/usr " \
 		-DCMAKE_INSTALL_LIBEXECDIR="/usr/lib/clang" \
-		-DLLVM_TARGETS_TO_BUILD="host;AMDGPU;BPF;NVPTX;WebAssembly" \
-		-DLLVM_ENABLE_PROJECTS="clang;compiler-rt;lld" \
+		-DLLVM_TARGETS_TO_BUILD="all" \
+		-DLLVM_ENABLE_PROJECTS="clang;compiler-rt" \
 		-DLLVM_BINUTILS_INCDIR=/usr/include \
 		-DLLVM_OPTIMIZED_TABLEGEN=ON \
 		-DLLVM_BUILD_LLVM_DYLIB=ON \
