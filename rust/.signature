@@ -1,8 +1,5 @@
 untrusted comment: verify with saux-next.pub
-RWRbmjgE6uIUtyoxL+cb249qO9kBI6inRPmTz+6X8o4eQp2rxM+2seLm1oPMdmwFWqudPD6ajQ1Yypu2SNnAs0m5f9CYXFFh5gs=
-SHA256 (Pkgfile) = 51882fd9f2a25f1d43d518ed11324e4ed2482a59c3b779c74c91b579b0406414
-SHA256 (.footprint) = 8ccacb65084dcdad648dc91edc932e9ebb6782ba003f69aa80903e7213f94614
-SHA256 (rustc-1.71.1-src.tar.gz) = 6fa90d50d1d529a75f6cc349784de57d7ec0ba2419b09bde7d335c25bd4e472e
-SHA256 (change-libexec-bootstrap.patch) = c58e84913cba47e71b75b9c387864fbf3b92fc91b454be4e499931d38f21c5d2
-SHA256 (change-libexec-cargo.patch) = aa65949624181360840b297ce14eb9af2e8bab3dc9f791836cbf098d46337eb8
-SHA256 (fix-bootstrap-version-comparison.patch) = c6f285fee598c896e8438775bc2db877a6ee46b16f3efe0a6129a7352bf87f26
+RWRbmjgE6uIUt1Sd9jUdbA54jEr45wlWPhiAxIapQCJXPbwvQySECZuPux7S6bC1fOIyuPqemY0RQ3UNpdZTvVjfMPN6xBJs1gQ=
+SHA256 (Pkgfile) = eae1dc5e3da4a1d5e4d847b777a1e3728b13ff7a9d2a6380066198fa7351c58e
+SHA256 (.footprint) = 8f556b2891d76e29f120909d4abb00c02ce4163c9775ce4c94abadc025515d9a
+SHA256 (rustc-nightly-src.tar.xz) = a7f0ae7f398747f76763c6878b49e927627a08866989ea0e184e58a64e910d38
