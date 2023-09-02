@@ -1,11 +1,11 @@
 # Description:	Secure SHell server and client tools
 # URL:		http://www.openssh.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	libxcrypt linux-pam openssl3 zlib
+# Depends on:	linux-pam openssl3 zlib
 
 name=openssh
 version=9.4p1
-release=1
+release=2
 source=(https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/${name}-${version}.tar.gz
 	sshd.pam sshd.run)
 
@@ -24,9 +24,11 @@ build() {
 		--with-pam \
 		--with-pie \
 		--with-pid-dir=/run \
+		--with-xauth=/usr/bin/xauth \
 		--with-privsep-user=nobody \
 		--with-privsep-path=/var/empty \
-		--with-xauth=/usr/bin/xauth
+		--without-zlib-version-check
+
 
 	make V=1
 
