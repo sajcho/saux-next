@@ -1,5 +1,5 @@
 untrusted comment: verify with saux-next.pub
-RWRbmjgE6uIUt2hhKbms8b/5vciNqc/vR/QaCx4I60CzMqUs6Kux6FwaCwlQ3ahOFqSeXz9p0K8ulxZPYqWQSEBn5dh+Cxw9bAU=
-SHA256 (Pkgfile) = bad4633657757038b523acee05c57bed19be5f0680ae3f7e345db23f2a869cf5
-SHA256 (.footprint) = c7f091a81428d7755c51618552504f8502a4a56e34dfa1b38c280f419dac968a
-SHA256 (Python-3.12.0rc1.tar.xz) = bd88d516b51474d7facae3ed7ab6a421efb17e583c21c8a749470f293e2575fc
+RWRbmjgE6uIUt58no52zgLrxau1ZISqxP5cbVZGj1GNqNzqcnXxhFP245CLPyk6gNvcHvxdlWP2w3qNJrnR0XtR8ugJmxsxLhwk=
+SHA256 (Pkgfile) = e1b236ec7fc1fc22ceebc106a2d6b236d68f2c6e22d06def92206b85b86cd442
+SHA256 (.footprint) = 0f4debb9a942d73827b534022e2af51d3e2a607e86ec2f89d6086ae33586bd5d
+SHA256 (Python-3.12.0rc2.tar.xz) = 11eb10376e6baf7bea53001f5181eaee1797788c4db6e83a061e422357927674
