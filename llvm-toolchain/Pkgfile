@@ -5,9 +5,9 @@
 
 name=llvm-toolchain
 _realname=llvm-project
-version=17.0.0rc3
+version=17.0.0rc4
 release=0
-source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-17.0.0-rc3/${_realname}-${version}.src.tar.xz)
+source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-17.0.0-rc4/${_realname}-${version}.src.tar.xz)
 
 build() {
 	cd ${_realname}-${version}.src
@@ -15,14 +15,14 @@ build() {
 	mkdir build
 	cd build
 
-	export CC="gcc"
-	export CXX="g++"
+	export CC="clang"
+	export CXX="clang++"
 	export CFLAGS="${CFLAGS/ -flto=auto -ffat-lto-objects/ -w}"
 	export CXXFLAGS="${CXXFLAGS/ -flto=auto -ffat-lto-objects/ -w}"
 
 	cmake -G Ninja \
 		-DCMAKE_BUILD_TYPE="Release" \
-		-DCMAKE_INSTALL_PREFIX="/usr " \
+		-DCMAKE_INSTALL_PREFIX="/usr" \
 		-DCMAKE_INSTALL_LIBEXECDIR="/usr/lib/clang" \
 		-DLLVM_TARGETS_TO_BUILD="all" \
 		-DLLVM_ENABLE_PROJECTS="clang;compiler-rt" \
@@ -34,6 +34,8 @@ build() {
 		-DLLVM_ENABLE_ZLIB=ON \
 		-DLLVM_ENABLE_FFI=ON \
 		-DLLVM_ENABLE_EH=ON \
+		-DLLVM_ENABLE_LLD=ON \
+		-DLLVM_ENABLE_LTO="Thin" \
 		-DLLVM_USE_PERF=ON \
 		-DLLVM_ENABLE_PIC=ON \
 		-DLLVM_ENABLE_RTTI=ON \
@@ -54,19 +56,8 @@ build() {
 	install -d $PKG/usr/lib/bfd-plugins
 	ln -s ../libLTO.so $PKG/usr/lib/bfd-plugins/
 
-	/usr/bin/python3 $SRC/${_realname}-${version}.src/llvm/utils/lit/setup.py build
-	/usr/bin/python3 $SRC/${_realname}-${version}.src/llvm/utils/lit/setup.py install \
-		--prefix=/usr \
-		--optimize=1 \
-		--skip-build \
-		--root=$PKG
-
-	/usr/bin/python3 -m compileall -d $SRC/${_realname}-${version}.src/llvm/utils/lit \
-		-x run-find-all-symbols.py $PKG
-	/usr/bin/python3 -O -m compileall -d $SRC/${_realname}-${version}.src/llvm/utils/lit \
-		-x run-find-all-symbols.py $PKG
-	/usr/bin/python3 -OO -m compileall -d $SRC/${_realname}-${version}.src/llvm/utils/lit \
-		-x run-find-all-symbols.py $PKG
-
-	find $PKG -type f -name '*.a' -delete
+	/usr/bin/python3 \
+		../llvm/utils/lit/setup.py build
+	/usr/bin/python3 \
+		../llvm/utils/lit/setup.py install --root=$PKG
 }

@@ -1,4 +1,5 @@
 untrusted comment: verify with saux-next.pub
-RWRbmjgE6uIUt2GfgEy6Gdo5nGSOt34YoFB7PsVLNgGH3SFPnEHaKgstncoM+ca5gMs9RnzlU1i/ms75euAUBqz1vK8LZtR3LAo=
-SHA256 (Pkgfile) = e8a629ef3ea6330f0b16f440e0f76dad2596c99b7dacdc9465136c2f00e54b32
-SHA256 (llvm-project-17.0.0rc3.src.tar.xz) = 60493f4e974fcca7b739aea4901af2d957b0eaea34b42815359be59cf6c88fa2
+RWRbmjgE6uIUt4zmg0wLlFa9rxMvWrygmL22HWNhO+qPotv/pNQ8jOuksj8zqzeVss7YId5xwyeH6UruyDwRCt3T+Z0IWiUD2gE=
+SHA256 (Pkgfile) = cb8f1e74791cdbc6c7f848f13dd2d419c4e60e4456cee68fb15e2a7eb23cc84d
+SHA256 (.footprint) = 8138cb0808b525e535e86ad2ea28edbc719910e9a823bac57ee1a61eca106530
+SHA256 (llvm-project-17.0.0rc4.src.tar.xz) = 277d0671a8f389e2ae44f4fe591974bb8434c115a94ed289ab17d13a4de2940e
