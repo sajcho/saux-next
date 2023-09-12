@@ -1,0 +1,5 @@
+untrusted comment: verify with saux-next.pub
+RWRbmjgE6uIUt3YM8rrw6+a483bMW6x2gAKOrw3X0ITJdG5QTQAje8O9jjsBDxRTf3gR6AJo7q6VK4c3CxwC9YRLXeuFdUQ9MQA=
+SHA256 (Pkgfile) = f665efebaae10363f626b7a431286d31a8df97389cbc9be4c1e0f8af3bf96321
+SHA256 (.footprint) = 616a3b3968c2a58307adbfe97248be27f6a603b5961ae76d22cae27510595503
+SHA256 (flit_core-3.9.0.tar.gz) = 72ad266176c4a3fcfab5f2930d76896059851240570ce9a98733b658cb786eba
