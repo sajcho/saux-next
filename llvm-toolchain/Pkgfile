@@ -6,19 +6,19 @@
 name=llvm-toolchain
 _realname=llvm-project
 version=17.0.0rc4
-release=0
+release=1
 source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-17.0.0-rc4/${_realname}-${version}.src.tar.xz)
 
 build() {
 	cd ${_realname}-${version}.src
 
-	mkdir build
-	cd build
-
-	export CC="clang"
-	export CXX="clang++"
+	export CC="gcc"
+	export CXX="g++"
 	export CFLAGS="${CFLAGS/ -flto=auto -ffat-lto-objects/ -w}"
 	export CXXFLAGS="${CXXFLAGS/ -flto=auto -ffat-lto-objects/ -w}"
+
+	mkdir build
+	cd build
 
 	cmake -G Ninja \
 		-DCMAKE_BUILD_TYPE="Release" \
@@ -34,8 +34,6 @@ build() {
 		-DLLVM_ENABLE_ZLIB=ON \
 		-DLLVM_ENABLE_FFI=ON \
 		-DLLVM_ENABLE_EH=ON \
-		-DLLVM_ENABLE_LLD=ON \
-		-DLLVM_ENABLE_LTO="Thin" \
 		-DLLVM_USE_PERF=ON \
 		-DLLVM_ENABLE_PIC=ON \
 		-DLLVM_ENABLE_RTTI=ON \
