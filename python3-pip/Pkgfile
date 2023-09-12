@@ -1,25 +1,26 @@
-# Description:	A tool for installing and managing Python packages.
-# URL:		https://pypi.python.org/pypi/pip/
+# Description:	Helper scripts to install pip, in a Python installation that doesn't have it. 
+# URL:		https://github.com/pypa/get-pip
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 # Depends on:	python3
 
 name=python3-pip
-_realname=pip
+_realname=get-pip
 version=23.2.1
 release=1
-source=(https://files.pythonhosted.org/packages/source/${name:8:1}/${_realname}/${_realname}-${version}.tar.gz)
+source=(https://github.com/pypa/${_realname}/archive/${version}/${_realname}-${version}.tar.gz)
 
 build() {
-	cd ${_realname}-${version}
+	cd ${_realname}-${version}/public
 
-	pip3 wheel -w dist --isolated --no-deps $PWD
-
-	PIP_CONFIG_FILE=/dev/null \
-	/usr/bin/pip3 install \
-		--root-user-action=ignore \
+	/usr/bin/python3 get-pip.py install \
+		--no-wheel \
+		--no-setuptools \
 		--no-warn-script-location \
-		--ignore-installed \
-		--no-deps dist/*.whl \
-		--isolated \
-		--root=$PKG
+		--root $PKG
+
+	# fix version
+	sed "s|pip3.11|pip3.12|" \
+		-i $PKG/usr/lib/python3.12/site-packages/pip-23.2.1.dist-info/entry_points.txt
+
+	find $PKG -type f -name '*.exe' -delete
 }
