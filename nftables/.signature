@@ -1,7 +1,7 @@
 untrusted comment: verify with saux-next.pub
-RWRbmjgE6uIUt1MTng8c/cWvgqA/DFXAkX5cn60rNzystw0ZivkLUV+SjtAIqSnZH52myX1/O7Kr8GlJKVohyNmm/um7LDV1Jgo=
-SHA256 (Pkgfile) = daf662671ed96188f5b04bd3d7a16aa20f84d4c6f6d40ea76d60b47b1fd695c7
-SHA256 (.footprint) = 07e7a91ad0e52e38ea9b429fa76d88c507d318c5238262acaf9d5ca7f1cf25ce
+RWRbmjgE6uIUt/z5xf/FIm6V01HGcFxgJNCnUmX7y8XUhBFCAFDnsERVN+ecXNsdVPOImByif6QcgvLhAKFrsQNsK+4JJ9k1lA0=
+SHA256 (Pkgfile) = ff95aff4834357b7c8c9adda35085589c54d54a77d69c1856a341b6789972c23
+SHA256 (.footprint) = be202c25ca3c4b2b6b897a580134b2db310eac62cc1a8495e7aa295d39d2de5b
 SHA256 (nftables-1.0.8.tar.xz) = 9373740de41a82dbc98818e0a46a073faeb8a8d0689fa4fa1a74399c32bf3d50
 SHA256 (nftables-basic-firewall.nft) = 4fe63b07304af44f0c98c6453b7d98ded50cac3b8877e5daf1c95f5ff6f99a42
 SHA256 (nftables.conf) = 4d2f8fd036dead63503674cdca3c212e8cf81bf5ae9abb54e7808c521b02fce0
