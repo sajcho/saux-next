@@ -1,4 +1,4 @@
-# Description:	Python interpreter, beta version 3.12.0b3
+# Description:	Python interpreter, pre-release 3.12.0rc2
 # URL:		https://www.python.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 # Depends on:	bzip2 expat libffi libtirpc libxcrypt mpdecimal openssl3 sqlite3 xz
@@ -6,7 +6,7 @@
 name=python3
 _realname=Python
 version=3.12.0rc2
-release=0
+release=1
 source=(https://www.python.org/ftp/python/3.12.0/${_realname}-${version}.tar.xz)
 
 build() {
@@ -23,6 +23,7 @@ build() {
 	CFLAGS+=" -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"
 	CXXFLAGS+=" -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"
 
+	CXX="/usr/bin/c++" \
 	./configure \
 		--build=$CHOST \
 		--host=$CHOST \
