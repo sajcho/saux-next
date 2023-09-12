@@ -5,7 +5,7 @@
 
 name=meson
 version=1.2.1
-release=1
+release=2
 source=(https://github.com/mesonbuild/${name}/releases/download/${version}/${name}-${version}.tar.gz \
 	build-meson)
 
@@ -13,7 +13,7 @@ build() {
 	cd ${name}-${version}
 
 
-	/usr/bin/pip3 wheel -w dist --isolated --no-deps $PWD
+	/usr/bin/pip3 wheel -w dist --no-cache-dir --no-build-isolation --no-deps $PWD
 
 	PIP_CONFIG_FILE=/dev/null \
 	/usr/bin/pip3 install \
@@ -21,6 +21,7 @@ build() {
 		--no-warn-script-location \
 		--ignore-installed \
 		--no-deps dist/*.whl \
+		--no-index \
 		--isolated \
 		--root=$PKG
 
