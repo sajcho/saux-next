@@ -1,18 +1,18 @@
 # Description:	Documentation Utilities for Python3
 # URL:		https://pypi.python.org/pypi/docutils
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	python3-pip
+# Depends on:	python3-setuptools
 
 name=python3-docutils
 _realname=docutils
 version=0.20.1
-release=1
+release=2
 source=(https://files.pythonhosted.org/packages/source/d/${_realname}/${_realname}-${version}.tar.gz)
 
 build() {
 	cd ${_realname}-${version}
 
-	/usr/bin/pip3 wheel -w dist --isolated --no-deps $PWD
+	/usr/bin/pip3 wheel -w dist --no-cache-dir --no-build-isolation --no-deps $PWD
 
 	PIP_CONFIG_FILE=/dev/null \
 	/usr/bin/pip3 install \
@@ -20,6 +20,7 @@ build() {
 		--no-warn-script-location \
 		--ignore-installed \
 		--no-deps dist/*.whl \
+		--no-index \
 		--isolated \
 		--root=$PKG
 
