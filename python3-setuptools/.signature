@@ -1,5 +1,5 @@
 untrusted comment: verify with saux-next.pub
-RWRbmjgE6uIUt9/jlDr/Ys0LfHKdFYM/aguyUVP2tU91IK2bn7ZBmL27ny7uO4Ng2kFkcHaaqhLTvh3+Dy9h8SJA0lwcwH2uVQQ=
-SHA256 (Pkgfile) = 31e51a2f89442f1ade5949f0c06d5fe4966a2b2e68e616c857c1b735fec7c818
-SHA256 (.footprint) = 8fa68aabb0ea08f25d1e99168f821264e1f5c90f8af4e189337030eb9b4d6d8c
-SHA256 (setuptools-68.1.2.tar.gz) = 3d4dfa6d95f1b101d695a6160a7626e15583af71a5f52176efa5d39a054d475d
+RWRbmjgE6uIUt+Z7UvgzXm25MTAIKvg0cdjdUkADbd7rQfVSMko6cifojYXog/k7x1/WddlVlvmKJIgFImFp0H/F3XlF2YbDSAY=
+SHA256 (Pkgfile) = 70593583f8759696c52772c5e14c287978448ea69e39e9bb500924c986e83a7f
+SHA256 (.footprint) = ab177b9ae8c441b5496a0fabd93447c217f9a40b0d0e53fd7f2d2c58a8ee1b7b
+SHA256 (setuptools-68.2.0.tar.gz) = 00478ca80aeebeecb2f288d3206b0de568df5cd2b8fada1209843cc9a8d88a48
