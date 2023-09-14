@@ -1,6 +1,8 @@
 d:linux-pam
 d:nfs-utils
 d:glibc
+d:popt
+d:efivar
 d:npth
 d:dejagnu
 d:mpc
@@ -91,6 +93,7 @@ d:liburing
 d:libunistring
 d:console-font-terminus
 d:which
+d:refind
 d:libarchive
 d:prt-get
 d:minicom
@@ -109,6 +112,7 @@ d:bc
 d:util-linux
 d:nftables
 d:lynx
+d:gnu-efi
 d:cmake
 d:patch
 d:gperf
@@ -150,6 +154,7 @@ d:python3-docutils
 d:libdevmapper
 d:findutils
 d:libseccomp
+d:efibootmgr
 d:python3-wheel
 d:acl
 d:nasm
@@ -209,6 +214,12 @@ f:75cd4754e92fff45e3b9b3ac68676e41:glibc/.nostrip
 f:b6fa98d559c3ae5877f2e25a22b9726c:glibc/README
 f:080a5f73969d191c8c1afeb8f487aebf:glibc/.footprint
 f:fbbc215a9b15ba4846f326cc88108057:glibc/hosts
+f:1260f13e3d2333502827af9016390757:popt/Pkgfile
+f:a5e74bfd18e6323121d557e3cfc33793:popt/.signature
+f:23597c500f768a1e0d91d27185e46c32:popt/.footprint
+f:b67a27a365c6b55b5b1dd36deefc2c3f:efivar/Pkgfile
+f:df65e9cf55906077d6271947a2d9851f:efivar/.signature
+f:9c3e7221db89db68b4a63d3c1a353647:efivar/.footprint
 f:772815d41425ec7655da4df433f55d65:npth/Pkgfile
 f:8e9af08a0bb1719afb95ba05206fe5e6:npth/.signature
 f:6d9837eb6e4845b412795a25d3c22316:npth/.footprint
@@ -528,6 +539,11 @@ f:d21963552e877968012854321a3acbd4:console-font-terminus/.footprint
 f:7f086fa9aa57d697e3fd1ddb84622b0e:which/Pkgfile
 f:c4ed41e77e39b00d69a27ff8247aa3b3:which/.signature
 f:eb87551fe2b7b7f87261629329602247:which/.footprint
+f:3fcfed29ff419fa5803da53ac8aae901:refind/Pkgfile
+f:ba35d55321a0379dbf1d1299e5ab156f:refind/.signature
+f:2d0f9b6e36599449fc7d491996fee94e:refind/10-refind-disable-fortify.patch
+f:bc0242f8de0d160578a174d300c0c772:refind/.footprint
+f:01d9c279c989f80f7f21c8dce374ab9d:refind/01-missing-always-inline.patch
 f:e9229c393ab764ca97116ce7fb4adda9:libarchive/Pkgfile
 f:17693ccb4ffe28ace45f6cc6628df263:libarchive/.signature
 f:8f1ab3061b1f4e908e19a4a833cc7362:libarchive/.footprint
@@ -603,6 +619,9 @@ f:8bcd0f2c1aafc5af9b3338bb94705fe2:nftables/.footprint
 f:e856c706f8bce4e7609309b363117266:lynx/Pkgfile
 f:0fea24e2f90ed8e2282e125ac9794183:lynx/.signature
 f:4e29bcae8c4bfd886a273c165cbce23e:lynx/.footprint
+f:5befe00a71c75bee9bc053bc048ab9c2:gnu-efi/Pkgfile
+f:a71a35c8177cfd82b3c3ed3ee5556599:gnu-efi/.signature
+f:0186e82c7cc75a888d056656f8b2a080:gnu-efi/.footprint
 f:916054c8cf96d7b587586bd7a3d55e12:cmake/Pkgfile
 f:32ec6d11d2ed571e2be7f75e9eb18bb3:cmake/.signature
 f:68b61055a746a9c23c79cd48e50c8cf1:cmake/.footprint
@@ -753,6 +772,9 @@ f:2dc5a54cb85bdabf757242415c7aaf15:findutils/.footprint
 f:a908c4da4cade95a6a270cabe8f22c78:libseccomp/Pkgfile
 f:00513aeda96226a3d2725754e03a2a8d:libseccomp/.signature
 f:d5e69efff2031b7253862de55c96dc01:libseccomp/.footprint
+f:365a31a30f24535777220c111bc25017:efibootmgr/Pkgfile
+f:b05da972e7f7d9de3230b90e87b3127b:efibootmgr/.signature
+f:f7cfede7c801951a0ff658d78ae3d053:efibootmgr/.footprint
 f:1584d0436445d974659a235955607d88:python3-wheel/Pkgfile
 f:9bdbc8011b3c11836ff81e29e19b9959:python3-wheel/.signature
 f:4e5bd130739a8f04120482e164083a8f:python3-wheel/.footprint
@@ -765,8 +787,8 @@ f:965820d80ba705ed7dd6b0ad8246ea5c:nasm/.footprint
 f:fa1a59861529c8f5513c91eeade1a20a:check/Pkgfile
 f:12b1ccec83441ddf7ef535a322d20a34:check/.signature
 f:a492e3a9fa08ca1d4dc6ec3dd74c3c94:check/.footprint
-f:bb0f9b5bbfaac4bcd26cf003b16917b3:pkgutils/Pkgfile
-f:7ba1190a979e87ec7eb6bd46a108bfe0:pkgutils/.signature
+f:b68afd943da2a17461443baafaacee1b:pkgutils/Pkgfile
+f:af5ab4bc15bd5db433b1778b447b0f92:pkgutils/.signature
 f:0e1717fd1eeb62d8fce0c23682e9b337:pkgutils/.footprint
 f:e802003c14284c58fbf85265789b0e44:pkgutils/pkgutils-5.40.10-by-saux.patch
 f:8d39ef121f05b46c4f7354adbde98778:vim/Pkgfile
