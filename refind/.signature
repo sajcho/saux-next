@@ -1,0 +1,7 @@
+untrusted comment: verify with saux-next.pub
+RWRbmjgE6uIUt6YlnbPWKv+T/71VuTmD9Jtq4OLIq9ClS6C5rv7r0cuxaG/80RIw9f9bsMb4n6qqAJ15ES6+SsL0wYvQGyNCwgk=
+SHA256 (Pkgfile) = f8724b87a7fce0e453e248f3c70fefeb605e7558aaa9bcf497611803d3bc3093
+SHA256 (.footprint) = e4dfc8911b28d0b9a043fd1aac863a4ea8a2f2bfdf50dd8aaf2c6cf46d76a0a2
+SHA256 (refind-src-0.14.0.2.tar.gz) = 26a0c55dfd3565499e1f82d8fe57464dbef19ca886ce6d01a815228b8efc8b0f
+SHA256 (01-missing-always-inline.patch) = 9abdac280a5c1624eec5a781cb2348c974fabf06fdd427e4c1f9cf4c210922b5
+SHA256 (10-refind-disable-fortify.patch) = 177f5757218171818333be500776501bc6c19809d6b1a8a4841b496179bec509
