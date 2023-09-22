@@ -1,0 +1,8 @@
+untrusted comment: verify with saux-next.pub
+RWRbmjgE6uIUt5HZSX/DwVRvMaT/q4InbVMginLsh0tEat7+77ndbDPuof9Bu1WTESjBK1BrMaXLBrm5Spyg/+9N7meEOjl+ZQg=
+SHA256 (Pkgfile) = b48e99f6c8518aa87e72379deaac893b48f9490a4641ca5ab66091425d558ca8
+SHA256 (.footprint) = 288132b9bb1281432803f321adc2a736f9d496b9f13cd9253d9d1feecc4e4bfd
+SHA256 (freetype-2.13.2.tar.xz) = 12991c4e55c506dd7f9b765933e62fd2be2e06d421505d7950a132e4f1bb484d
+SHA256 (0001-Enable-table-validation-modules.patch) = f41df4f336d5e82e58733c7a4594476c9216cfc85c096327745a7e1b559e17e1
+SHA256 (0002-Enable-subpixel-rendering.patch) = dc77c1cfee4bf8e7e0690628c95d211df09e0d0750e4c8f075b78b5f105514f7
+SHA256 (0004-Enable-long-PCF-family-names.patch) = 266384222f87a02fb02b2179828f6c26fe6d7b1fd09d1f7e3734e7fcb09cda2e
