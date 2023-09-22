@@ -1,5 +1,5 @@
 untrusted comment: verify with saux-next.pub
-RWRbmjgE6uIUt1Hdyg77i40XyRycSU6bfhvNgfTNbNKiYu/Gl1Gt7zuygZK3WChCmjFZ+s2Lc2A6yvlSiIIOxlr04yHDNsLxVQc=
-SHA256 (Pkgfile) = 9a2a496bd51d352b049cfdae17f5b9a26d2ca7bfe38aaaec19684867a832e42f
+RWRbmjgE6uIUt57z1ArJf+d4kcl6zwLq1roptkrp8gj+XOZxd/QhnRAZNBl+J/HgvIUtWJl+cd2E4KHJpX5ia2nhmQra0vXMGwY=
+SHA256 (Pkgfile) = 417061307372fecc2c0b14cc502af85170e59044480eecd67c5d88c5e3aa439a
 SHA256 (.footprint) = 1662dbff2de9322f2626322d56660c935d19188a9072045946af4a44c3ac3b13
-SHA256 (rust-bindgen-0.66.1.tar.gz) = adedec96f2a00ce835a7c31656e09d6aae6ef55df9ca3d8d65d995f8f2542388
+SHA256 (rust-bindgen-0.68.1.tar.gz) = 6a577026184a6f7a99b48f46f2074c83d272d3aadf91c7b94a4c6c34e6acd445
