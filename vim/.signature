@@ -1,5 +1,5 @@
 untrusted comment: verify with saux-next.pub
-RWRbmjgE6uIUtxbrcp0GFnI0zqQUeOQFR4QH/xyDRtl5BbKeslFzuAmKlrcRt/zlEol0pQ0H4iltSeS+OaYu39bQCLyjpFSOuAs=
-SHA256 (Pkgfile) = e7ce38ccd4751065d07a4df571584ddf3d8d95b623fd1b31ae9da11288c2b159
-SHA256 (.footprint) = a5fc840db2d1f526c95cbc2aa5e74d7eebd23b77ad8f535bc77726568442a41c
-SHA256 (vim-9.0.1783.tar.gz) = 2c3be0b27cb12045623b5bca99c4c99fee05d5657ae4c7244504e5c84282ee1b
+RWRbmjgE6uIUt6MaAmqSDTKc6VVrD55lOPrUqng0zMe0QG3xiILUL/elx0dp7sVh5kLMcgbnlV++zZlsLDDzL/wReoWZDFXg6Qk=
+SHA256 (Pkgfile) = 1d175427d3c356a1f5803baa4b0ee4154bdf1e8f32356b49f0aa46f901b0e562
+SHA256 (.footprint) = d5662088f91af4c0d807d8aa74da89aedf699e0c3776435bdbbea4e484e84119
+SHA256 (vim-9.0.1927.tar.gz) = 2b17989c6258f422276c6df9b72626947027a8b98e3a8eca2b2649c6ddc33765
