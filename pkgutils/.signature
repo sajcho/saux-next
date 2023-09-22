@@ -1,6 +1,6 @@
 untrusted comment: verify with saux-next.pub
-RWRbmjgE6uIUt6GSjB0HGrDYu6KtVVid4ZcZZrrX3nXKHsm8J0VOonxeSMw0Ss99QgYcMO3+mgNkciXK9+qfuyn05aFBFJxR/gQ=
-SHA256 (Pkgfile) = cc9fc17c2a792970b50a3f6c4d705f00b11dbf74c5f4cb8d5eee523e5530fb6d
+RWRbmjgE6uIUtyjOnLexynwqp1Qt5oKHKCA959dJE0LeSNT/ms15Qy00zY1R/azuu4ojKn2ZyFA7n74FCDc5faVw34JphSidugo=
+SHA256 (Pkgfile) = a417fc21dfced355d974bd4535a12172e5a4384a76e0ec48d2f19fb2ee27a2d7
 SHA256 (.footprint) = 7d143f18f63bba5569d729eefd0d0f04ae4b0539f8bd71f9cfd6955b9e7c639d
 SHA256 (pkgutils-5.40.10.tar.xz) = 2d86335be3d0452dcc7ae5f568e7296cd7ea80117f57646d15420a6dc192f174
 SHA256 (pkgutils-5.40.10-by-saux.patch) = f88daaa3fe06fdcc02efdfb461bc31832e618600f31178a7efaaca386bec5d3f

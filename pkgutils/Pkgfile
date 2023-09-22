@@ -14,10 +14,8 @@ build() {
 
 	patch -p1 -i $SRC/pkgutils-5.40.10-by-saux.patch
 
-	# fix wget2 message - Unknown option 'passive-ftp'
+	#  wget2 does not support this parameter
 	sed "s|--passive-ftp ||" -i pkgmk.in
-	# rename wget to wget2
-	sed "s|wget|wget2|" -i pkgmk.in
 
 	make DESTDIR=$PKG install
 }
