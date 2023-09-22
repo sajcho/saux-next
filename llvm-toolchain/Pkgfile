@@ -5,9 +5,9 @@
 
 name=llvm-toolchain
 _realname=llvm-project
-version=17.0.0rc4
+version=17.0.1
 release=1
-source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-17.0.0-rc4/${_realname}-${version}.src.tar.xz)
+source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-${version}/${_realname}-${version}.src.tar.xz)
 
 build() {
 	cd ${_realname}-${version}.src
