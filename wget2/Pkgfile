@@ -36,6 +36,8 @@ build() {
 
 	make DESTDIR=$PKG install
 
+	ln -s wget2 $PKG/usr/bin/wget
+
 	rm $PKG/usr/bin/wget2_noinstall
 
 	find $PKG -type f -name '*.la' -delete

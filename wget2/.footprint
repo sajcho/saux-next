@@ -1,5 +1,6 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
+lrwxrwxrwx	root/root	usr/bin/wget -> wget2
 -rwxr-xr-x	root/root	usr/bin/wget2
 drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/wget.h
