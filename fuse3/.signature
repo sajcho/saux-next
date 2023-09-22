@@ -1,0 +1,6 @@
+untrusted comment: verify with saux-next.pub
+RWRbmjgE6uIUt9wqpJPsiy/0dAdDGRV8/QqkGGlU4snAzoAypwLh5onpOfiBHwBe1C3NRorkM6mvW+Db+QNIc0U6tJuJmJA9kwo=
+SHA256 (Pkgfile) = ab30d3160bd968543072f0bf4271616654532862c83a23833649736d601f6616
+SHA256 (.footprint) = 474b436729eca765ede1272027e721786bf48d3ca8b75ec1557f884e7aff3994
+SHA256 (fuse-3.16.1.tar.gz) = 75a7140ce2d4589eda2784d2279be9d2b273a9b6b0f79ecb871dc4dded046fb5
+SHA256 (fix-realpath.patch) = e9f18e86545f558fb6ab92ae1778fe0392b06ca50ec44389db2c75a2bf95b5dd
