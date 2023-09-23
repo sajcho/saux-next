@@ -375,8 +375,8 @@ f:c85e671ffb84e1f1617c3f66e078e130:cpio/Pkgfile
 f:706e58bbcc4115b8ce2a2f6718905cce:cpio/.signature
 f:5506ef99ba9669698d9bf35499c1fc8e:cpio/.footprint
 f:00af920c8299f318646d8b7e6bd34cb0:grub2-efi/saux-grub-theme.tar.xz
-f:8817d46231dacb3df68cad1dd03619ae:grub2-efi/Pkgfile
-f:96ad87fca0ae444700691f23bbbb2831:grub2-efi/.signature
+f:b13e141036d9ecc5bc42ae09ca19a867:grub2-efi/Pkgfile
+f:8f9067c7287ecc05016f7205cb6b83b3:grub2-efi/.signature
 f:6807357a87869289ae92809d8a04cba6:grub2-efi/unifont-15.1.01.bdf
 f:26843232b44253fd243874d999d61498:grub2-efi/grub.default
 f:ff9ac151c1597368aa7177f0f9921aaf:grub2-efi/.footprint
