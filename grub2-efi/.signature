@@ -1,6 +1,6 @@
 untrusted comment: verify with saux-next.pub
-RWRbmjgE6uIUt33m3hc7pYyYsnl8kywOesoVWVT+yTX4u3eNZWkf4UnOy/FOHGBS8cOUjLwb6US6JSWw9OEYAhcJOa6CClx9rwA=
-SHA256 (Pkgfile) = c5d2609fbb64d08b76cc867faeee1296a00b249540ebac026104b1ab3e55f3f9
+RWRbmjgE6uIUt/fsqlTpdkUkGhhAhXx3JhQwdpRkubxci8bhCGSworc//Lrhzb/FV2yd3mseuoLb2/cMkrMcFbc+PerZizS2XgI=
+SHA256 (Pkgfile) = fb2fff0f3b44ce03f83d28f935fc8fc2927b41ba1cd85ad0b4cd0a7d6ab584c2
 SHA256 (.footprint) = a837c8b676d2be97c131b9343af3ece405e4533b03ce2f99d3eec8ee5afb491c
 SHA256 (grub.default) = 88e1d8fa0e5953bf11093ab4b468371261a68b59e98608faeee9b8acf62551a7
 SHA256 (saux-grub-theme.tar.xz) = b7ffbc5bb0a56aca94f3a8a838e649cc54421b79a6fa5ebb17e3ccc58cade5c9
