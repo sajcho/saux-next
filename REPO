@@ -413,13 +413,13 @@ f:f186886e649f3d0bb92f458cd83eb3aa:groff/Pkgfile
 f:9d9ab8c75b87f246d4e57433528dbbc3:groff/.signature
 f:c0dbfb6299dfaeb45a4b23084a25a9a7:groff/README
 f:f97308d8a40bf6bd8d671e0bd9a99725:groff/.footprint
-f:61035650a04ff1c88118b0fcbea30a85:rust/Pkgfile
-f:1a47883fe72a3eb8eaaace44ef820aaf:rust/.signature
+f:d341c3dddbae2e2271f7ade6814eb4b3:rust/Pkgfile
+f:20d3a115f1c5d5ad8d138d8c925eeee3:rust/.signature
 f:f902f4f75a2ece6ed85c6b8a29682853:rust/0002-tool.rs-change-dir-libexec-to-lib.patch
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:8570861063b945ec436ad79503051634:rust/README
 f:acfe401e3bb660090f61f84ce2869573:rust/0001-dist.rs-change-dir-libexec-to-lib.patch
-f:24747c48c97b8ac2978e7174c38f439b:rust/.footprint
+f:3686bc28fd0048a4668259fe60306697:rust/.footprint
 f:44e31031e5d0c42977adacf6d1c811dd:mpg123/Pkgfile
 f:ad3c2f09aa71cd49ec61b076ab5ff25b:mpg123/.signature
 f:d735d02e2319b44ea348212aae1b333a:mpg123/.footprint
