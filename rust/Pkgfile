@@ -5,9 +5,9 @@
 
 name=rust
 _realname=rustc
-version=1.73.0-beta.6
+version=1.73.0-beta.7
 _nameversion=beta
-realversion="rustc 1.73.0-beta.6 (9b9539791 2023-09-17)"
+realversion="rustc 1.73.0-beta.7 (7c76587ed 2023-09-22)"
 release=1
 
 source=(https://static.rust-lang.org/dist/${_realname}-${_nameversion}-src.tar.xz \
@@ -27,8 +27,8 @@ build() {
 	patch -p1 -i $SRC/0002-tool.rs-change-dir-libexec-to-lib.patch
 
 	# Remove bundled dependencies.
-	#rm -rf src/llvm-project/*
-	#install -d src/llvm-project/libunwind
+	rm -rf src/llvm-project/*
+	install -d src/llvm-project/libunwind
 
 cat <<- EOF > $SRC/config.toml
 	changelog-seen = 2
